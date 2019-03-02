@@ -12,7 +12,6 @@ const App = () => {
       <form
         onSubmit={e => {
           e.preventDefault()
-          formSubmit(name, setName)
         }}
       >
         <input
@@ -24,11 +23,6 @@ const App = () => {
       </form>
     </div>
   )
-}
-
-const formSubmit = (value, setValue) => {
-  console.log(`Email sent to ${value}!`)
-  setValue('')
 }
 
 export default App
