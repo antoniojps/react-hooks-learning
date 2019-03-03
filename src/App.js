@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { useTitleInput } from './hooks/useTitleInput'
+import Toggle from './Toggle'
 
 const App = () => {
   const [name, setName] = useTitleInput('test')
@@ -25,6 +26,7 @@ const App = () => {
       <button onClick={() => console.log(ref.current.className)}>
         Check ref
       </button>
+      <Toggle />
       <form
         onSubmit={e => {
           e.preventDefault()
